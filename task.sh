@@ -18,11 +18,11 @@ case $ac1 in
 	1)
 	 read -p "Enter your new task: " newtask 
 	 read -p "Provide status of the task (Progress/Pending/Completed): " status
-	 echo "$newtask" "-" "$status" >> $TASK_FILE
+	 num=$(wc -l < "$TASK_FILE")
+	 echo "$((num+1)) $newtask" "-" "$status" >> $TASK_FILE
 	;;
 	2)
-	 echo "All tasks: " 
-	 cat "$TASK_FILE"
+	 bash all.sh
 	;;
 	3)
 	 bash modtasks.sh

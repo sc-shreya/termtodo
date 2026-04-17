@@ -1,5 +1,6 @@
-dance on it - progress
-sing - Pending
-cry - Pending
-give - Pending
-sit - Completed
+1 Dance - Progress
+2 Fix - Pending
+3 Sing - Pending
+4 Wash - Completed
+5 Dust - Pending
+6 Toss - Pending
