@@ -2,7 +2,7 @@ name: Run on Alpine
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   run-on-alpine:
