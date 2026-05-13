@@ -1,0 +1,23 @@
+name : Run on alpine
+
+  on:
+    push: 
+    branches: ["main"]
+
+  jobs: 
+    run-on-alpine:
+      runs-on: ubuntu-latest
+
+    container:
+     image: alpine-latest
+
+    steps: 
+     -name: Install Python
+      run: apk add --no-cache python3 py3-pip
+    
+     -name: Checkout code
+      uses: action/checkout@v4
+
+     -name: Run your program
+      run: python3 app.py
+
